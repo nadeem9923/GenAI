@@ -24,7 +24,8 @@ bedrock_client = boto3.client(
 
 # Allow user to upload CFN template file to describe the application
 def file_uploader():
-    st.subheader("Please upload the IaC file for your application (e.g. [CloudFormation](https://aws.amazon.com/cloudformation/), [Terraform](https://www.terraform.io/), or [OpenAPI](https://swagger.io/specification/) template file)")
+    #st.subheader("Please upload the IaC file for your application (e.g. [CloudFormation](https://aws.amazon.com/cloudformation/), [Terraform](https://www.terraform.io/), or [OpenAPI](https://swagger.io/specification/) template file)")
+    st.subheader("Please upload the file for your application")
     
     uploaded_file = st.file_uploader("Choose a IaC template file (.yaml or .json)")
     if uploaded_file is not None:
